@@ -59,7 +59,9 @@ clear
 sleep 1
 
 printf "\nInstall grub and making its config file ...\n\n"
-grub-install --target=i386-pc device
+printf "\n\nEnter the target device i.e : /dev/sdc : "
+read device
+grub-install --target=i386-pc $device
 grub-mkconfig -o /boot/grub/grub/cfg
 
 clear
