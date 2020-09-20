@@ -20,7 +20,7 @@ clear
 sleep 1
 
 printf "\nInstalling plasma desktop , konsole , dolphin and kate"
-pacman -S plasma konsole dolphin kate
+pacman -S --noconfirm --needed plasma konsole dolphin kate
 
 
 
