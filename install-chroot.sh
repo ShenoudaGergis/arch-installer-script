@@ -54,7 +54,7 @@ clear
 sleep 1
 
 printf "\nDownload and install grub and os-prober packages ...\n\n"
-pacman -S grub os-prober
+pacman -S --noconfirm --needed grub os-prober
 clear
 sleep 1
 
